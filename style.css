@@ -1,0 +1,1312 @@
+/*=================================================================
+
+	Template Name : HTML 5 Responsive Template.
+	Author Name   : ;
+	Author Url    : ......;
+	Decripation   : This is a one page HTML 5 Responsive Template.
+	Version       : 1.0 ;
+	
+=================================================================*/
+
+/************ CSS INDEX ***************
+
+01. Google Fonts
+02. Default CSS
+03. Section CSS
+04. Menu Area CSS
+05. Header Area CSS
+06. Countdown Area CSS
+07. Couple Area CSS
+08. Weeding Area CSS
+09. Love Story Area CSS
+10. Event Area CSS
+11. Gallery Area CSS
+12. Bless Area CSS
+13. Team Area CSS
+14. Contact Area CSS
+15. Blog Area CSS
+16. Footer Area CSS
+17. scroll Top to Area
+
+
+**************************************/
+
+/* ================= 01.Google Fonts ================ */
+
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes&subset=latin-ext');
+@font-face {font-family:"Fundamental  Brigade Schwer";src:url("Fundamental_Brigade_Schwer.eot?") format("eot"),url("Fundamental_Brigade_Schwer.woff") format("woff"),url("Fundamental_Brigade_Schwer.ttf") format("truetype"),url("Fundamental_Brigade_Schwer.svg#FundamentalBrigadeSchwer") format("svg");font-weight:normal;
+font-style:normal;}
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700');
+/* =================
+	02.Default CSS 
+===================== */
+html, body{
+	height:100%;
+}
+body{
+	overflow-x:hidden;
+	font-size:14px;
+}
+a, a:hover{
+	text-decoration:none;
+}
+a:active{
+	text-decoration:none;
+}
+a{
+	transition:.3s;
+}
+ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+li{
+	list-style:none;
+}
+p{
+	margin-bottom:0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin:0 0 0px;
+}
+.padding-100{
+	padding: 100px 0;
+}
+.padding-bottom-100{
+	padding-bottom: 200px;
+}
+.padding-tb{
+	padding: 80px 0 90px 0;
+}
+.p-0 {
+	padding: 0;
+}
+.p-b-15 {
+	padding-bottom: 15px;
+}
+.m-t-200 {
+	margin-top: 293px;
+	margin-left: 20px ;
+}
+.m-r-15 {
+	margin-right: 20px ;
+}
+/* ===================
+	03. Section Area
+===================== */
+.section-title h2 {
+	text-transform: capitalize;
+	font-size: 50px;
+	margin-bottom: 32px;
+	color: #eb2e4a;
+	line-height: 37px;
+	font-family:"Fundamental  Brigade Schwer";
+}
+.section-title p {
+	font-size: 16px;
+	width: 73%;
+	margin: 0 auto;
+	margin-top: 39px;
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 400;
+}
+.section-title .p-b{
+	padding-bottom: 38px; 
+}
+/*================ 
+   04. Menu Area 
+===================*/
+.logo {
+  background: #eb2e4a;
+}
+.logo a {
+	padding-left: 11px;
+	padding-top: 24px;
+	padding-bottom: 23px;
+	font-size: 29px;
+	color: #fff;
+	padding-right: 5px;
+	display: inline-block;
+	font-family: 'Great Vibes', cursive;
+	font-weight: 400;
+}
+.mainmenu {
+	padding-top: 41px;
+}
+.mainmenu li, #social-icon li {
+	display: inline-block;
+}
+.mainmenu li a {
+	color: #454545;
+	font-size: 16px;
+	text-transform: capitalize;
+	-webkit-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	border-bottom-left-radius: 13px;
+	border-top-right-radius: 13px;
+	position:relative;
+	padding-left: 36px;
+	font-family:"Fundamental  Brigade Schwer";
+}
+.mainmenu li a:hover, .mainmenu li.current a {
+	color: #eb2e4a;
+	text-decoration: none;
+}
+.mainmenu li a::before, .mainmenu li.current a::before {
+	position: absolute;
+	left: 20%;
+	bottom: -10px;
+	content: "";
+	color: #eb2e4a;
+	opacity: 0;
+	transform: translate(-50%, 0);
+	transition: .3s;
+	width: 5px;
+	height: 5px;
+	background: #eb2e4a;
+	border-radius: 50%;
+}
+.mainmenu li a:hover::before, .mainmenu li.current a::before {
+	left: 71%;
+	opacity: 1;
+}
+/*====================
+	05. Header-Area
+======================= */
+.welcome-header-area{
+	background: url(images/1.jpg) no-repeat scroll 0 0/cover;
+	height: 100%;
+	position: relative;
+}
+.header-top {
+	-webkit-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 99999;
+	background: rgba(233,233,233,.77);
+	height: 100px;
+}
+.welcome-header-area .stick {
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+    background: rgba(233,233,233);
+}
+.header-image {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    margin-left: -50%;
+    top: 58%;
+    transform: translate(0, -50%);
+    z-index: 9999;
+}
+.header-text {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    margin-left: -50%;
+    top: 58%;
+    transform: translate(0, -50%);
+    z-index: 9999;
+}
+.header-text span {
+  font-size: 40px;
+  color: #fff;
+  display: block;
+  padding-top: 31px;
+	font-family: 'Great Vibes', cursive;
+	font-weight: 400;
+}
+.header-text h2 {
+	font-size: 60px;
+	color: #fff;
+	line-height: 72px;
+	font-family:"Fundamental  Brigade Schwer";
+}
+/* =====================
+	06. Countdown-Area 
+=========================*/
+/* .countdown-area {
+	position: absolute;
+	left: 50%;
+	width: 100%;
+	bottom: -13.5%;
+	margin-left: -50%;
+} */
+.mrt-countdown {
+	background: #eb2e4a;
+	width: 100%;
+	position: relative;
+	padding-bottom: 17px;
+	padding-top: 17px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-bottom-left-radius: 7px;
+	border-top-right-radius: 7px;
+}
+.mrt-countdown::before {
+	position: absolute;
+	content: "";
+	background: url(images/count-left.png), url(images/count-right.png);
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 8px;
+	background-repeat: no-repeat;
+	background-position: left top, right top;
+}
+/* ===================
+	07. Couple-Area 
+======================*/
+#couple-padding{
+	padding-top:86px;
+}
+.couple-single-text {
+	position: relative;
+	filter: grayscale(100%);
+	transition: .3s;
+}
+.couple-single-text::before {
+	position: absolute;
+	content: "";
+	background: url(images/shape/1.png), url(images/shape/2.png), url(images/shape/3.png), url(images/shape/4.png);
+	width: 111%;
+	height: 113%;
+	left: 0px;
+	top: 0px;
+	background-repeat: no-repeat;
+	background-position: left top, right top, left bottom, right bottom;
+}
+.couple-single-text span::before {
+	position: absolute;
+	content: "";
+	background: #eb2e4a;
+	width: 68px;
+	height: 2px;
+	left: 50%;
+	top: 6%;
+	margin-left: -20px;
+}
+.couple-single-text span::after {
+	position: absolute;
+	content: "";
+	background: #eb2e4a;
+	width: 68px;
+	height: 2px;
+	left: 50%;
+	bottom: -8%;
+	margin-left: -20px;
+}
+.couple-single-text.text-center h2 {
+	padding-top: 40px;
+	font-size: 30px;
+	text-transform: capitalize;
+	color: #eb2e4a;
+	position: relative;
+	padding-left: 28px;
+	font-family:"Fundamental  Brigade Schwer";
+}
+.couple-single-text.text-center p {
+  padding-top: 35px;
+  padding-bottom: 21px;
+  padding-left: 14%;
+  padding-right: 5%;
+  font-size: 16px;
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 400;
+}
+#social-icon li {
+  padding-left: 25px;
+  padding-bottom: 5px;
+}
+#social-icon li a {
+  font-size: 20px;
+  color: #666;
+}
+#social-icon li .active{
+	color:#eb2e4a;
+}
+#social-icon li a:hover {
+	color: #eb2e4a;
+}
+.couple-single-image {
+	margin-left: 20px;
+}
+.couple-single-image img {
+	width: 100%;
+}
+.couple-single-text.active.text-center {
+  position: relative;
+  filter: grayscale(0%);
+	transition: .3s;
+}
+.couple-single-text.text-center:hover {
+  filter: grayscale(0%);
+}
+/*========================= 
+	08. Wedding-text-area 
+============================*/
+.wedding-text-area{
+	background: url(images/bg/1.jpg) no-repeat scroll 0 0/cover;
+	height: 400px;
+}
+.wedding-text.text-center p {
+	font-size: 35px;
+	color: #fff;
+	padding-top: 163px;
+	font-family:"Fundamental  Brigade Schwer";
+}
+/*======================= 
+	09. Love Story Area 
+=========================*/
+.story-single {
+	padding-top: 85px;
+	position: relative;
+}
+.story-single-image {
+  position: relative;
+}
+.story-date {
+  position: absolute;
+  left: 0;
+  top: 84px;
+  background: rgba(192,197,194,.7);
+  width: 70px;
+  height: 75px;
+  line-height: 34px;
+}
+.story-single-image img {
+  width: 100%;
+}
+.story-date li {
+  font-size: 20px;
+  text-align: center;
+  color: #eb2e4a;
+	font-family:"Fundamental  Brigade Schwer";
+}
+.story-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  background: rgba(192,197,194,.7);
+  padding-top: 20px;
+  padding-bottom: 23px;
+}
+.story-text h2 {
+	font-size: 30px;
+	color: #eb2e4a;
+	display: inline-block;
+	font-family:"Fundamental  Brigade Schwer";
+}
+.story-text span {
+  float: right;
+}
+.story-text span i {
+  font-size: 30px;
+  padding-right: 30px;
+  display: block;
+  color: #eb2e4a;
+}
+.story-text p {
+	font-size: 16px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 30px;
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 400;
+}
+#mrt-right-border::before {
+	position: absolute;
+	background: #eb2e4a;
+	width: 3px;
+	content: "";
+	height: 333px;
+	top: 0;
+	right: -36px;
+}
+#mrt-left-border::before {
+	position: absolute;
+	background: #eb2e4a;
+	width: 3px;
+	content: "";
+	height: 490px;
+	top: 0;
+	left: -37px;
+}
+.mrt-border-right-image {
+	position: absolute;
+	background: #eb2e4a;
+	width: 50px;
+	height: 50px;
+	right: -59px;
+	top: 112px;
+	border-radius: 50%;
+	line-height: 45px;
+	text-align: center;
+}
+.mrt-border-top-image {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	right: -60px;
+	top: -34px;
+	text-align: center;
+}
+.mrt-border-bottom-image {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: -60px;
+	bottom: -123px;
+	text-align: center;
+}
+.mrt-border-left-image {
+	position: absolute;
+	background: #eb2e4a;
+	width: 50px;
+	height: 50px;
+	left: -60px;
+	top: 176px;
+	border-radius: 50%;
+	line-height: 45px;
+	text-align: center;
+}
+#mrt-margin-bottom {
+	margin-top: 88px;
+}
+/* =================
+	10. Event-Area 
+====================*/
+.event-area {
+	background: url(images/bg/2.jpg) no-repeat scroll 0 0/cover;
+	position: relative;
+}
+.single-event {
+	margin-top: 55px;
+}
+.single-event-image img {
+	width: 100%;
+}
+#mrt1 {
+  position: relative;
+}
+#mrt1::before {
+	position: absolute;
+	content: "";
+	background: url(images/event/1.png), url(images/event/2.png), url(images/event/3.png), url(images/event/4.png);
+	width: 94%;
+	height: 94%;
+	left: 8px;
+	top: 6px;
+	background-repeat: no-repeat;
+	background-position: left top, right top, left bottom, right bottom;
+}
+.single-event-list.active {
+	background-color: #fff;
+	margin-left: 12px;
+	margin-right: 12px;
+	padding-top: 42px;
+	padding-bottom: 50px;
+	height: 100%;
+	filter: grayscale(0%);
+	box-shadow: 0px 5px 6px #555;
+}
+.single-event-list.active li {
+	font-size: 18px;
+	padding-bottom: 10px;
+	z-index: 9;
+	position: relative;
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 400;
+}
+.single-event-list.active li:nth-child(2), .single-event-list.active li:nth-child(5) {
+	color: #eb2e4a;
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 700;
+}
+.single-event-list.avtive span::before {
+	position: absolute;
+	content: "";
+	background: #eb2e4a;
+	width: 110px;
+	height: 1px;
+	left: 50%;
+	top: 16px;
+	margin-left: -55px;
+}
+.single-event-list.active span::after {
+	position: absolute;
+	content: "";
+	background: #eb2e4a;
+	width: 110px;
+	height: 1px;
+	left: 50%;
+	bottom: 16px;
+	margin-left: -55px;
+}
+.single-event-text.avtive, .single-event-text, .single-event-image.avtive, .single-event-image {
+  position: relative;
+}
+.single-event-text.avtive h2 {
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  text-align: center;
+  width: 100%;
+  text-transform: capitalize;
+  background: rgba(229,229,299,.7);
+  height: 70px;
+  padding-top: 15px;
+  color: #eb2e4a;
+  font-size:30px;
+	font-family:"Fundamental  Brigade Schwer";
+}
+.single-event-text h2 {
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  text-align: center;
+  width: 100%;
+  text-transform: capitalize;
+  background: rgba(229,229,299,.7);
+  height: 70px;
+  padding-top: 15px;
+  color: #eb2e4a;
+  font-size:30px;
+	font-family:"Fundamental  Brigade Schwer";
+}
+.single-event-list {
+	background-color: #fff;
+	margin-left: 12px;
+	margin-right: 12px;
+	padding-top: 42px;
+	padding-bottom: 50px;
+	height: 100%;
+	transition: .3s;
+}
+.single-event-list span::before {
+	position: absolute;
+	content: "";
+	background: #eb2e4a;
+	width: 110px;
+	height: 1px;
+	left: 50%;
+	top: 16px;
+	margin-left: -55px;
+}
+.single-event-list span::after {
+	position: absolute;
+	content: "";
+	background: #eb2e4a;
+	width: 110px;
+	height: 1px;
+	left: 50%;
+	bottom: 16px;
+	margin-left: -55px;
+}
+.single-event-list li {
+	font-size: 18px;
+	padding-bottom: 10px;
+	z-index: 9;
+	position: relative;
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 400;
+}
+.single-event-list li:nth-child(2), .single-event-list li:nth-child(5) {
+	color: #eb2e4a;
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 700;
+}
+.single-event-text {
+  filter: grayscale(100%);
+  transition: .3s;
+}
+.single-event-text.avtive {
+  filter: grayscale(0%);
+}
+.single-event:hover .single-event-list {
+  box-shadow: 0px 5px 6px #555;
+}
+.single-event-text:hover {
+  filter: grayscale(0%);
+}
+.single-event:hover .single-event-text {
+	filter: grayscale(0%);
+}
+/* ==================== 
+	11. Gallery Area 
+========================*/
+.work-menu {
+	text-align: center;
+	padding-bottom: 68px;
+	padding-top: 55px;
+}
+.work-menu button {
+	letter-spacing: 1px;
+	text-transform: capitalize;
+	color: #000;
+	font-size: 18px;
+	transition: .3s;
+	background: #fff;
+	margin-left: -5px;
+	font-weight: 600;
+	border: none;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-family:"Fundamental  Brigade Schwer";
+}
+.work-menu button:hover, .work-menu button.activemenu {
+	color: #eb2e4a;
+}
+.work-menu button:focus{
+	outline: none;
+}
+.myallproject, #sw-col-p {
+	padding-left: 0;
+}
+.single-work{
+	position: relative;
+	overflow: hidden;
+}
+.single-work img{
+	width: 100%;
+}
+.work-overly {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.6) none repeat scroll 0 0;
+    opacity: 0;
+    transition:opacity 400ms ease 0s;
+}
+.work-content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 999;
+}
+.work-link a {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	display: inline-block;
+	color: #eb2e4a;
+	margin: 0 5px;
+	cursor: pointer;
+	font-size: 20px;
+	border-radius: 100%;
+	transform: scale3d(0, 0, 0);
+	transition: all 400ms ease 0s;
+	opacity: 0;
+	font-family:"Fundamental  Brigade Schwer";
+}
+.work-content h3 {
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: 1.5px;
+	text-transform: capitalize;
+	margin-top: 15px;
+	color: #eb2e4a;
+	transform: translate3d(0px, 15px, 0px);
+	transition: all 400ms ease 0s;
+	font-family:"Fundamental  Brigade Schwer";
+}
+.single-work img{
+	transform:scale3d(1, 1, 1);
+	transition:all 400ms ease 0s;
+}
+.single-work:hover img{
+	transform:scale3d(1.15, 1.15, 1);
+}
+.single-work:hover .work-link a{
+	opacity: 1;
+	transform:scale3d(1, 1, 1);
+}
+.single-work:hover .work-overly{
+	opacity: 1;
+}
+.single-work:hover .work-content h3{
+	opacity: 1;
+	transform:translate3d(0px, 0px, 0px);
+}
+img.zoom-img{
+	-webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+	-moz-transform: scale(1, 1);
+	-ms-transform: scale(1, 1);
+	-o-transform: scale(1, 1);
+	transition-timing-function: ease-out;
+	-webkit-transition-timing-function: ease-out;
+	-moz-transition-timing-function: ease-out;
+	-ms-transition-timing-function: ease-out;
+	-o-transition-timing-function: ease-out;
+	-webkit-transition-duration: 2s;
+	-moz-transition-duration: 2s;
+	transition-duration: 2s;
+}
+img.zoom-img:hover,.portfolio-grids:hover img.zoom-img{
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	overflow: hidden;
+}
+/* ================== 
+	12. Bless Area 
+=====================*/
+.bless-area {
+	background: url(images/bg/3.jpg) no-repeat scroll 0 0/cover;
+	position: relative;
+}
+#mrt-bless {
+	position: relative;
+	margin-top: 43px;
+}
+#mrt-bless::before {
+	position: absolute;
+	content: "";
+	background: url(images/bless/1.png), url(images/bless/2.png), url(images/bless/3.png), url(images/bless/4.png);
+	width: 97%;
+	height: 94%;
+	left: 8px;
+	top: 6px;
+	background-repeat: no-repeat;
+	background-position: left top, right top, left bottom, right bottom;
+}
+.single-bless-list {
+	background-color: #fff;
+	padding-top: 42px;
+	padding-bottom: 50px;
+	height: 100%;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: center;
+}
+#mrt-bless img {
+	width: 100px;
+	margin: 0 auto;
+	border-radius: 50%;
+	height: 100px;
+}
+.single-bless-list p {
+	font-size: 16px;
+	position: relative;
+	margin-top: 20px;
+	padding-left: 45px;
+	padding-right: 45px;
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 400;
+}
+.single-bless-list h3 {
+	font-size: 20px;
+	position: relative;
+	color: #eb2e4a;
+	text-transform: capitalize;
+	margin-top: 30px;
+	display: inline-block;
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 700;
+}
+.single-bless-list span::after {
+	position: absolute;
+	content: "";
+	background: #eb2e4a;
+	width: 196px;
+	height: 1px;
+	left: 50%;
+	bottom: 16px;
+	margin-left: -98px;
+}
+.single-bless-list span::before {
+	position: absolute;
+	content: "";
+	background: #eb2e4a;
+	width: 196px;
+	height: 1px;
+	left: 50%;
+	top: 14px;
+	margin-left: -98px;
+}
+.owl-nav div {
+    background: rgb(255, 0, 0) none repeat scroll 0 0;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin-top: -15px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 30px;
+}
+.owl-next {
+    left: auto;
+    right: 0;
+}
+.owl-dots div {
+    background:#ccc;
+    display: inline-block;
+    height: 10px;
+    margin: 0 5px;
+    width: 10px;
+    border-radius: 50%;
+}
+.owl-dots {
+    margin-top: 30px;
+    text-align: center;
+}
+.owl-dot.active {
+	background: #eb2e4a;
+}
+/* ================
+	13. Team Area
+=================== */
+.mrt-owl-left, .mrt-owl-right {
+	padding-top: 78px;
+}
+.item-img {
+  position: relative;
+}
+.team-social-icon {
+  position: absolute;
+  left: 10px;
+  top: 20px;
+}
+.team-social-icon ul li a {
+  width: 25px;
+  height: 25px;
+  background: #666;
+  line-height: 25px;
+  font-size: 20px;
+  color: #fff;
+  display: block;
+  text-align: center;
+}
+.team-social-icon ul li {
+  padding-bottom: 10px;
+}
+.team-social-icon ul li:nth-child(2) a {
+	background: #eb2e4a;
+}
+.team-social-icon ul li a:hover {
+	background: #eb2e4a;
+}
+.item-img h2 {
+	font-size: 25px;
+	text-align: center;
+	background: #eb2e4a;
+	color: #fff;
+	padding-top: 24px;
+	padding-bottom: 22px;
+	font-family:"Fundamental  Brigade Schwer";
+}
+.team-social-icon1 {
+  position: absolute;
+  left: 10px;
+  top: 20px;
+}
+.team-social-icon1 ul li a {
+  width: 25px;
+  height: 25px;
+  background: #666;
+  line-height: 25px;
+  font-size: 20px;
+  color: #fff;
+  display: block;
+  text-align: center;
+}
+.team-social-icon1 ul li {
+  padding-bottom: 10px;
+}
+.team-social-icon1 ul li:nth-child(2) a {
+	background: #eb2e4a;
+}
+.team-social-icon1 ul li a:hover {
+	background: #eb2e4a;
+}
+h2.team-member-name {
+	font-size: 25px;
+	text-align: center;
+	background: #eb2e4a;
+	color: #fff;
+	padding-top: 24px;
+	padding-bottom: 22px;
+	opacity: 0;
+}
+.team-social-icon1 {
+  opacity: 0;
+  transition: .3s;
+}
+.item-img:hover .team-social-icon1 {
+	opacity: 1;
+	-webkit-animation: bounceIn;
+	animation: bounceIn;
+    animation-duration: 0s;
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+}
+.item-img:hover .team-member-name {
+	opacity: 1;
+	-webkit-animation: zoomIn;
+	animation: zoomIn;
+    animation-duration: 0s;
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+}
+/* ==================
+	14. Contact Area
+===================== */
+.contact-area{
+	background:url(images/contact/1.png) no-repeat scroll center center/cover;
+	position:relative;
+	width: 100%;
+}
+.mrt-contact-us {
+	margin-top: 71px;
+}
+.single-input {
+    width: 100%;
+}
+.single-input input,.mrt-contact-us textarea{
+    width: 100%;
+	height:43px;
+	padding:0 16px;
+	margin-bottom:30px;
+	color:#000;
+	border:none;
+	border-bottom:1px solid #d6d6d6;
+	background:none;
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 400;
+}
+.auroramenu-default a {
+	color: #000;
+	background-color: transparent;
+	font-size: 18px;
+}
+.auroramenu-default > li > a {
+	border-bottom: 2px #eb2e4a solid;
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 400;
+}
+.auroramenu-default ul a {
+	background-color: #fff;
+	font-size: 16px;
+	font-family: 'Oxygen', sans-serif;
+}
+.mrt-option li ul li:nth-child(1) {
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 700;
+}
+/* ================
+	15. Blog Area
+=================== */
+.single-blog-member {
+	margin-top: 85px;
+	position: relative;
+	transition: .3s;
+}
+.single-blog-image img {
+	width: 100%;
+}
+#mrt-blog {
+  position: relative;
+}
+#mrt-blog::before {
+	position: absolute;
+	content: "";
+	background: url(images/event/1.png), url(images/event/2.png), url(images/event/3.png), url(images/event/4.png);
+	width: 94%;
+	height: 94%;
+	left: 8px;
+	top: 6px;
+	background-repeat: no-repeat;
+	background-position: left top, right top, left bottom, right bottom;
+}
+.single-blog-date.active li {
+  list-style: none;
+  color: #fff;
+  font-size: 30px;
+  line-height: 26px;
+  text-align: center;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-bottom: 6px;
+  font-family:"Fundamental  Brigade Schwer";
+}
+.single-blog-date.active {
+  position: absolute;
+  top: 1px;
+  left: 0px;
+  background: #eb2e4a;
+  padding-top: 10px;
+  padding-bottom: 11px;
+	filter: grayscale(0%);
+  font-family:"Fundamental  Brigade Schwer";
+}
+.single-blog-image {
+  position: relative;
+}
+.single-blog-title.active h2 {
+	text-align: center;
+	text-transform: capitalize;
+	background: rgba(251,251,251,.7);
+	height: 70px;
+	padding-top: 15px;
+	color: #eb2e4a;
+	font-size: 30px;
+	font-weight: bold;
+	filter: grayscale(0%);
+  font-family:"Fundamental  Brigade Schwer";
+}
+.single-blog-title.active h2 span {
+  font-size: 20px;
+  color: #000;
+  font-family:"Fundamental  Brigade Schwer";
+}
+.single-blog-list.active {
+	background-color: #fff;
+	padding-top: 42px;
+	padding-bottom: 50px;
+	height: 100%;
+	filter: grayscale(0%);
+	box-shadow: 0px 5px 6px #555;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: center;
+}
+.single-blog-list.active p {
+	font-size: 16px;
+	position: relative;
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 700;
+}
+.single-blog-list.active a {
+	font-size: 16px;
+	position: relative;
+	background: #eb2e4a;
+	color: #fff;
+	text-transform: capitalize;
+	margin-top: 30px;
+	display: inline-block;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-bottom: 9px;
+	padding-top: 6px;
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 700;
+}
+.single-blog-list.active p::before {
+	position: absolute;
+	content: "";
+	background: #eb2e4a;
+	width: 110px;
+	height: 1px;
+	left: 50%;
+	top: -25px;
+	margin-left: -55px;
+}
+.single-blog-list.active span::after {
+	position: absolute;
+	content: "";
+	background: #eb2e4a;
+	width: 110px;
+	height: 1px;
+	left: 50%;
+	bottom: 16px;
+	margin-left: -55px;
+}
+.single-blog-member:hover .single-blog-date {
+	filter: grayscale(0%);
+}
+.single-blog-member:hover .single-blog-title h2{
+	filter: grayscale(0%);
+}
+.single-blog-member:hover .single-blog-list {
+	filter: grayscale(0%);
+}
+.single-blog-date {
+	position: absolute;
+	top: 1px;
+	left: 0px;
+	background: #eb2e4a;
+	padding-top: 10px;
+	padding-bottom: 11px;
+	filter: grayscale(100%);
+}
+.single-blog-date li {
+	list-style: none;
+	color: #fff;
+	font-size: 30px;
+	line-height: 26px;
+	text-align: center;
+	padding-left: 13px;
+	padding-right: 13px;
+	padding-bottom: 6px;
+  font-family:"Fundamental  Brigade Schwer";
+}
+.single-blog-title h2 {
+	text-align: center;
+	text-transform: capitalize;
+	background: rgba(251,251,251,.7);
+	height: 70px;
+	padding-top: 15px;
+	color: #eb2e4a;
+	font-size: 30px;
+	font-weight: bold;
+	filter: grayscale(100%);
+  font-family:"Fundamental  Brigade Schwer";
+}
+.single-blog-title h2 span {
+	font-size: 20px;
+	color: #000;
+  font-family:"Fundamental  Brigade Schwer";
+}
+.single-blog-list {
+	background-color: #fff;
+	padding-top: 42px;
+	padding-bottom: 50px;
+	height: 100%;
+	filter: grayscale(0%);
+	box-shadow: 0px 5px 6px #555;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: center;
+	filter: grayscale(100%);
+}
+.single-blog-list p {
+	font-size: 16px;
+	position: relative;
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 700;
+}
+.single-blog-list a {
+	font-size: 16px;
+	position: relative;
+	background: #eb2e4a;
+	color: #fff;
+	text-transform: capitalize;
+	margin-top: 30px;
+	display: inline-block;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-bottom: 9px;
+	padding-top: 6px;
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 700;
+}
+.single-blog-list span::after {
+	position: absolute;
+	content: "";
+	background: #eb2e4a;
+	width: 110px;
+	height: 1px;
+	left: 50%;
+	bottom: 16px;
+	margin-left: -55px;
+}
+.single-blog-list p::before {
+	position: absolute;
+	content: "";
+	background: #eb2e4a;
+	width: 110px;
+	height: 1px;
+	left: 50%;
+	top: -25px;
+	margin-left: -55px;
+}
+/* ==================
+	16. Footer Area
+===================== */
+.footer-area{
+	background:url(images/footer/1.png) no-repeat scroll center center/cover;
+	position:relative;
+	width: 100%;
+}
+.footer-area:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "";
+}
+.copyright-text p {
+   text-transform: capitalize;
+   font-size: 16px;
+   color: #fff;
+   font-family:;
+   font-weight:;
+   padding-bottom:26px;
+   padding-top:48px;
+   padding-left:156px;
+   font-family:"Fundamental  Brigade Schwer";
+}
+.social-icon li {
+	display: inline-block;
+	padding-top: 200px;
+	padding-right: 24px;
+}
+.social-icon li a {
+	color: #fff;
+	display: inline-block;
+	font-size: 30px;
+}
+.footer-image img{
+	padding-left:152px;
+	padding-top:44px;
+	position:relative;
+}
+.image-text p{
+	color:#fff;
+	font-size:39px;
+	position:absolute;
+	top:110px;
+	left:0;
+   font-family:"Fundamental  Brigade Schwer";
+}
+/* ========================
+	17. scroll Top to Area
+===========================*/
+.scroll-up-btn.opacity {
+    opacity: 1;
+}
+.scroll-up-btn {
+	background: #eb2e4a none repeat scroll 0 0;
+	bottom: 10px;
+	display: table;
+	height: 35px;
+	position: fixed;
+	right: 20px;
+	width: 35px;
+	z-index: 30;
+	opacity: 0;
+	cursor: pointer;
+}
+.scroll-up-btn i {
+    color: #ffffff;
+    display: table-cell;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
